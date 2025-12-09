@@ -1,0 +1,717 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Slow  Cooked Recipes are The Best One </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2c442480-215e-807e-9965-ca8cbe1074cb" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/woodcuts_13.jpg" style="object-position:center 100%"/><h1 class="page-title" dir="auto">Slow  Cooked Recipes are The Best One </h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p id="2c442480-215e-80a8-a669-dedf74af506c" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="2c442480-215e-80ea-bf0f-d71ab91aedb7"/></div><div style="display:contents" dir="auto"><h1 id="2c442480-215e-8015-af1d-ee0fa1871cbb" class="">Manali Tribe</h1></div><div style="display:contents" dir="auto"><hr id="2c442480-215e-803d-8cc0-df8809bbe3f3"/></div><div style="display:contents" dir="auto"><h1 id="2c442480-215e-8057-af72-d1c1550a4f23" class="">🏔️ Our Manali Winter Sprint (Jan 9 - 11)</h1></div><div style="display:contents" dir="auto"><p id="2c442480-215e-802d-9b5e-da849fad3270" class=""><strong>Our 3-Day Adventure to Manali, Sissu, &amp; Sethan</strong></p></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-80ae-ad62-ca4aad910e69" class="bulleted-list"><li style="list-style-type:disc"><strong>👥 Our Group:</strong> The 6 of us!</li></ul></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-80a3-8049-e3626f3f6126" class="bulleted-list"><li style="list-style-type:disc"><strong>🗓️ Our Window:</strong> 3 Days / 2 Nights of exploring</li></ul></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-8086-9725-fb2307ae951d" class="bulleted-list"><li style="list-style-type:disc"><strong>📍 Our Must-Sees:</strong> Manali, Sissu (via Atal Tunnel), Sethan, Solang Valley</li></ul></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-805b-a708-f28fd27306f6" class="bulleted-list"><li style="list-style-type:disc"><strong>💵 Our Budget (In-Manali):</strong> We expect to spend <strong>₹8,400 - ₹10,017</strong> per person</li></ul></div><div style="display:contents" dir="auto"><hr id="2c442480-215e-80c1-b8b7-d12696587768"/></div><div style="display:contents" dir="auto"><h2 id="2c442480-215e-803a-8d95-ca24e6efa288" class=""><strong>🗺️ Our Detailed Plan</strong></h2></div><div style="display:contents" dir="auto"><blockquote id="2c442480-215e-80b8-b1a1-c23c689f3ce0" class=""><strong>❄️ Day 1: Our Arrival &amp; The Sissu Dash</strong></blockquote></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8030-9e7b-d78ad25ec788" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8046-86c4-cb8a33ebd600"><td id="d:?q" class=""><strong>Time</strong></td><td id="Znz{" class=""><strong>Activity</strong></td><td id="Bp~G" class=""><strong>Focus</strong></td><td id="w?s[" class=""><strong>Notes</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80d5-830b-c72c2c695aa8"><td id="d:?q" class="">9:00 AM</td><td id="Znz{" class=""><strong>We Arrive &amp; Check-in</strong></td><td id="Bp~G" class="">Hotel &amp; Breakfast</td><td id="w?s[" class="">We&#x27;ll grab a taxi from the bus stand straight to the hotel. <strong>Crucially, we need to arrange our full-day private cab (SUV/Tempo Traveller) right away.</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80fe-a921-d44e74aca67b"><td id="d:?q" class="">11:00 AM</td><td id="Znz{" class=""><strong>Our Sissu Excursion</strong></td><td id="Bp~G" class="">Sightseeing &amp; Adventure</td><td id="w?s[" class="">We&#x27;re going straight to <strong>Sissu</strong> via the <strong>Atal Tunnel</strong>. The views will be incredible!</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80a0-997f-fea30c8820d2"><td id="d:?q" class="">1:30 PM</td><td id="Znz{" class=""><strong>Sissu Waterfall &amp; Lunch</strong></td><td id="Bp~G" class="">Natural Beauty</td><td id="w?s[" class="">We&#x27;ll take the short trek to the waterfall. We must try some warm <strong>Tibetan food</strong> at a local <em>dhabha</em>.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80c9-9de1-efbc5a1c6832"><td id="d:?q" class="">4:00 PM</td><td id="Znz{" class=""><strong>Our Return Drive</strong></td><td id="Bp~G" class="">Scenic Views</td><td id="w?s[" class="">We&#x27;ll enjoy the sunset views as we drive back to Manali.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-808e-808c-efba9d782be2"><td id="d:?q" class="">7:00 PM</td><td id="Znz{" class=""><strong>Mall Road &amp; Dinner</strong></td><td id="Bp~G" class="">Local Life &amp; Food</td><td id="w?s[" class="">Time for an evening stroll, a little shopping, and our first Manali dinner.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-803a-bc2e-e0729b4a2583" class=""><br/><strong>🌲 Day 2: Our Sethan &amp; Solang Adventure Day</strong></p></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8024-9cae-fe6951aa9f2e" class=""><br/></p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8057-a86c-db4be5dcb62e" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8097-96ac-cc8b5a0326c9"><td id="]&lt;[V" class=""><strong>Time</strong></td><td id="em;D" class=""><strong>Activity</strong></td><td id="NhU=" class=""><strong>Focus</strong></td><td id="J~_[" class=""><strong>Notes</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8022-af79-ff5777d10297"><td id="]&lt;[V" class="">9:00 AM</td><td id="em;D" class=""><strong>We Drive to Sethan</strong></td><td id="NhU=" class="">Off-beat &amp; Views</td><td id="J~_[" class="">We&#x27;ll drive to the quiet Buddhist hamlet. <strong>We must remember to check if we need a permit</strong> beforehand.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80a7-9f66-c6cbc1c2fce5"><td id="]&lt;[V" class="">10:30 AM</td><td id="em;D" class=""><strong>Snow Walk/Hike</strong></td><td id="NhU=" class="">Adventure</td><td id="J~_[" class="">We&#x27;ll enjoy the snowy landscape—maybe a short hike or just playing in the snow!</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ba-bf56-e5a30862cf8b"><td id="]&lt;[V" class="">1:00 PM</td><td id="em;D" class=""><strong>Lunch</strong></td><td id="NhU=" class="">Local Food</td><td id="J~_[" class="">We should try local dishes like <strong>Siddu</strong> at a homestay.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80a2-b323-c6e999e8dcd8"><td id="]&lt;[V" class="">2:30 PM</td><td id="em;D" class=""><strong>Solang Valley</strong></td><td id="NhU=" class="">Adventure Sports</td><td id="J~_[" class="">Our main adventure hub! We&#x27;ll do the <strong>Cable Car Ride</strong> and maybe one snow activity like Snow Scooters.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-800c-9654-fff6d7e51317"><td id="]&lt;[V" class="">5:00 PM</td><td id="em;D" class=""><strong>Old Manali</strong></td><td id="NhU=" class="">Culture &amp; Relaxation</td><td id="J~_[" class="">We&#x27;ll grab some coffee and snacks at a cozy cafe in Old Manali.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8025-a157-dfa65deddc17"><td id="]&lt;[V" class="">8:00 PM</td><td id="em;D" class=""><strong>Dinner</strong></td><td id="NhU=" class="">Special Meal</td><td id="J~_[" class="">We&#x27;ll treat ourselves to a nice dinner—maybe fresh <strong>Trout Fish</strong>—before calling it a night.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-80eb-baab-eccda3edddd5" class=""><strong>🕉️ Day 3: Our Last Stops &amp; Departure</strong></p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-805b-95da-e85daec5f743" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-806b-9a4f-c5c4e2e3526d"><td id="YeQc" class=""><strong>Time</strong></td><td id="zRw&lt;" class=""><strong>Activity</strong></td><td id="B_|Y" class=""><strong>Focus</strong></td><td id="HH[U" class=""><strong>Our Notes</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80b6-b03d-ef0d5d7358ea"><td id="YeQc" class="">9:00 AM</td><td id="zRw&lt;" class=""><strong>We Check-out</strong></td><td id="B_|Y" class="">Convenience</td><td id="HH[U" class="">We&#x27;ll check out and leave our bags at the hotel reception.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80f0-a5fb-f0706078c196"><td id="YeQc" class="">10:00 AM</td><td id="zRw&lt;" class=""><strong>Hadimba Devi Temple</strong></td><td id="B_|Y" class="">Spiritual &amp; History</td><td id="HH[U" class="">We&#x27;ll visit the beautiful wooden temple.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ea-ab6f-f4bf61e98380"><td id="YeQc" class="">11:00 AM</td><td id="zRw&lt;" class=""><strong>Vashisht Hot Springs</strong></td><td id="B_|Y" class="">Relaxation</td><td id="HH[U" class="">We can take a quick dip in the natural hot springs to warm up before the long bus ride.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ad-affa-fdbb6b401977"><td id="YeQc" class="">12:30 PM</td><td id="zRw&lt;" class=""><strong>Lunch &amp; Souvenirs</strong></td><td id="B_|Y" class="">Final Shopping &amp; Food</td><td id="HH[U" class="">Our last Himachali meal! We need to make sure we buy the Kullu shawls and souvenirs we wanted.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80bf-b364-eb6b3c186386"><td id="YeQc" class="">4:00 PM</td><td id="zRw&lt;" class=""><strong>We Head to the Bus Stand</strong></td><td id="B_|Y" class="">Departure Prep</td><td id="HH[U" class="">We must leave plenty of time to get to the bus stand for our evening departure.</td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-808f-9caf-c07ac54e9254" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8045-bb7f-e89e3409d198"><td id="OyYD" class=""><strong>Item</strong></td><td id="~s`t" class=""><strong>Est. Cost (INR)</strong></td><td id="{pHx" class=""><strong>Our Note</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80cb-9eff-e6ec91cd422d"><td id="OyYD" class="">Mid-Range Hotel (2 nights)</td><td id="~s`t" class="">₹8,000 – ₹12,000</td><td id="{pHx" class="">This is based on booking Air BNB</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80bb-ad9e-ebf79d8ccd6f"><td id="OyYD" class=""><strong>Total Accommodation</strong></td><td id="~s`t" class=""><strong>₹8,000 – ₹12,000</strong></td><td id="{pHx" class=""></td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8014-afbd-f1f3371aa14f" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8057-985e-da8fcec6d4cc"><td id="FFn[" class=""><strong>Trip/Item</strong></td><td id="KXBC" class=""><strong>Est. Cost (INR)</strong></td><td id="S&lt;[M" class=""><strong>Our Note</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8037-a916-da06da9524ab"><td id="FFn[" class="">Day 1: Sissu Trip</td><td id="KXBC" class="">₹6,000 – ₹8,000</td><td id="S&lt;[M" class="">Our most expensive taxi day. We must negotiate this rate beforehand.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-803b-bb28-c5715b82517e"><td id="FFn[" class="">Day 2: Sethan/Solang</td><td id="KXBC" class="">₹3,000 – ₹4,000</td><td id="S&lt;[M" class="">Our second main cab trip.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80d5-bb4a-fd2e05dc11dd"><td id="FFn[" class="">Local/Miscellaneous</td><td id="KXBC" class="">₹1,000 – ₹2,000</td><td id="S&lt;[M" class="">Small taxis for local area/transfers over the 3 days.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80b7-a2a5-c7055933a830"><td id="FFn[" class=""><strong>Total Transport</strong></td><td id="KXBC" class=""><strong>₹10,000 – ₹14,000</strong></td><td id="S&lt;[M" class=""></td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8083-806b-d70c865d9c6d" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80c2-9c45-fafb77ccad28"><td id="xcSH" class=""><strong>Item</strong></td><td id="JdZ;" class=""><strong>Per Person (INR)</strong></td><td id=";LlZ" class=""><strong>Total (INR)</strong></td><td id="=]Xw" class=""><strong>Our Note</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80c1-a704-ed697a84b82f"><td id="xcSH" class=""><strong>Total Food Cost</strong></td><td id="JdZ;" class="">₹3,500</td><td id=";LlZ" class=""><strong>₹21,000</strong></td><td id="=]Xw" class="">This covers all our meals and café stops for 3 days.</td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-80e9-bae5-c92821d96584" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80f6-b180-fcc2fa2b742e"><td id=":NMJ" class=""><strong>Item</strong></td><td id="pQYS" class=""><strong>Est. Cost (INR)</strong></td><td id="?Wfy" class=""><strong>Our Note</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-802a-a6bb-ca56dc873006"><td id=":NMJ" class="">Solang Cable Car</td><td id="pQYS" class="">₹5,100</td><td id="?Wfy" class="">₹850 per person for a round trip. Non-negotiable must-do!</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8059-a0a9-cc2f2254427b"><td id=":NMJ" class="">One Major Snow Activity</td><td id="pQYS" class="">₹4,800 – ₹6,000</td><td id="?Wfy" class="">Our budget for one shared activity like skiing or snow scooters.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-806f-86cb-d180c2830918"><td id=":NMJ" class="">Sethan Permit/Fees</td><td id="pQYS" class="">₹1,000 – ₹1,500</td><td id="?Wfy" class="">A small fund in case we need a vehicle permit.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8039-9601-ddd05cf48618"><td id=":NMJ" class=""><strong>Total Activities</strong></td><td id="pQYS" class=""><strong>₹11,400 – ₹13,100</strong></td><td id="?Wfy" class=""></td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8007-a5bd-c70837c2ca84" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ee-a78c-f0d37a6b572a"><td id="K&lt;\O" class=""><strong>Category</strong></td><td id="Nphf" class=""><strong>Estimated Total (INR)</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8021-85cd-ec83893c311f"><td id="K&lt;\O" class=""><strong>Sub-Total (in Manali)</strong></td><td id="Nphf" class=""><strong>₹50,400 – ₹60,100</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-808d-9d69-dd7d5b136a9d"><td id="K&lt;\O" class=""><strong>Our Estimated Cost Per Person</strong></td><td id="Nphf" class=""><strong>₹8,400 – ₹10,017</strong></td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h2 id="2c442480-215e-807d-830f-c3755b8c2b74" class="">🎒 Our Manali Winter Packing List (Jan 9 - 11)</h2></div><div style="display:contents" dir="auto"><h3 id="2c442480-215e-8024-a11a-f8992b692927" class=""><strong>1. 🧥 Essential Clothing Layers (The 3-Layer System)</strong></h3></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8014-96fd-e9edf72fd817" class="">Manali in January can drop to near or below 0°C (32°F). Wearing layers is essential to trap heat and adjust easily when moving indoors or driving.</p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8095-8756-f6c5fe78c265" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-802d-a6c2-c1807269b4c8"><td id="[NkB" class=""><strong>Layer</strong></td><td id="R:}U" class=""><strong>Item</strong></td><td id="Pmz^" class=""><strong>Quantity (Per Person)</strong></td><td id="B@wT" class=""><strong>Purpose</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80a2-8ad8-da85c828b638"><td id="[NkB" class=""><strong>Base Layer</strong></td><td id="R:}U" class=""><strong>Thermal Wear (Top &amp; Bottom)</strong></td><td id="Pmz^" class="">2 Sets</td><td id="B@wT" class="">Absolutely non-negotiable. This is the moisture-wicking layer next to your skin to keep you warm and dry.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-801c-9a0c-f4d22b825401"><td id="[NkB" class=""><strong>Mid-Layer</strong></td><td id="R:}U" class=""><strong>Wool Sweaters / Fleece Jackets</strong></td><td id="Pmz^" class="">2-3</td><td id="B@wT" class="">Provides bulk insulation. Fleece is lightweight and dries fast.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8033-a527-f76fb8e76db0"><td id="[NkB" class=""><strong>Outer Shell</strong></td><td id="R:}U" class=""><strong>Heavy, Insulated Winter Jacket</strong></td><td id="Pmz^" class="">1</td><td id="B@wT" class="">Must be <strong>windproof</strong> and preferably <strong>waterproof</strong> (or water-resistant) for snow.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8084-bbd8-cb3a0f82618a"><td id="[NkB" class=""><strong>Pants</strong></td><td id="R:}U" class=""><strong>Waterproof Trek/Snow Pants</strong></td><td id="Pmz^" class="">1</td><td id="B@wT" class="">Essential for snow activities in Solang/Sethan. You can rent these, but carrying your own is cleaner.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8043-b3b4-d786163b9730"><td id="[NkB" class=""><strong>Pants</strong></td><td id="R:}U" class="">Comfortable Trousers / Jeans</td><td id="Pmz^" class="">2</td><td id="B@wT" class="">Wear over your thermal bottom layer for sightseeing and travel. Avoid heavy denim, which dries slowly.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="2c442480-215e-8012-81e3-f2e6fb320aa8" class=""><strong>2. 🧤 Accessories for Extreme Cold</strong></h3></div><div style="display:contents" dir="auto"><p id="2c442480-215e-80d6-85a3-fe5236277d91" class="">These items protect your extremities, where you lose heat the fastest.</p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-803f-ab28-f5d4734432a7" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8016-b5df-cc9ec21083fa"><td id="cYQX" class=""><strong>Item</strong></td><td id="?Rsq" class=""><strong>Quantity (Per Person)</strong></td><td id="SKqY" class=""><strong>Purpose</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8074-be33-fa2ad6dd41d5"><td id="cYQX" class=""><strong>Woolen Socks</strong></td><td id="?Rsq" class="">3-4 Pairs</td><td id="SKqY" class=""><strong>Heavy duty</strong> wool or thermal socks (Merino wool is best). Avoid wearing multiple thin cotton socks.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80dd-86e0-c8527800c803"><td id="cYQX" class=""><strong>Waterproof Gloves</strong></td><td id="?Rsq" class="">1 Pair</td><td id="SKqY" class=""><strong>Crucial for snow play</strong> in Solang and Sissu. Woolen gloves get soaked quickly. Carry a light inner glove for warmth.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-804b-9302-f927ad50af8d"><td id="cYQX" class=""><strong>Woolen Cap / Beanie</strong></td><td id="?Rsq" class="">1-2</td><td id="SKqY" class="">Should cover the ears completely.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80cd-bc3f-c0290967ef9b"><td id="cYQX" class=""><strong>Muffler / Scarf / Neck Gaiter</strong></td><td id="?Rsq" class="">1</td><td id="SKqY" class="">To protect the neck, nose, and mouth from the biting wind.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80e3-a562-df0c577b736d"><td id="cYQX" class=""><strong>Sunglasses</strong></td><td id="?Rsq" class="">1 Pair</td><td id="SKqY" class="">High altitude sun glare on snow is very harsh and can cause snow blindness. UV protection is necessary.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8021-930f-eeda7d578c80" class=""><strong>3. 👟 Footwear</strong></p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8071-887a-f634acf62d4c" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8045-97c7-d059611c6238"><td id="VOrA" class=""><strong>Item</strong></td><td id="rZ_]" class=""><strong>Quantity (Per Person)</strong></td><td id="SQ`l" class=""><strong>Purpose</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80f7-a6e4-c1332ce1f99c"><td id="VOrA" class=""><strong>Waterproof Boots / Hiking Shoes</strong></td><td id="rZ_]" class="">1 Pair</td><td id="SQ`l" class="">Must have a good <strong>grip</strong> for walking on ice/slush. Your most important pair of shoes.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-805a-878b-c8ec05a25d82"><td id="VOrA" class=""><strong>Comfortable Shoes</strong></td><td id="rZ_]" class="">1 Pair</td><td id="SQ`l" class="">Sneakers or walking shoes for the bus journey and hotel time (optional).</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8096-bac4-dcf06bf40b06"><td id="VOrA" class=""><strong>Slippers / Flip-Flops</strong></td><td id="rZ_]" class="">1 Pair</td><td id="SQ`l" class="">For using inside the hotel or guesthouse.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="2c442480-215e-809c-9983-ed807a2ea4e4" class=""><strong>4. 💊 Health &amp; Toiletries</strong></h3></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8006-b606-d8eb6c7c9512" class="">The cold, dry mountain air and sudden altitude can affect skin and health.</p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8045-8791-ca27c497ae6e" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ed-b656-f57efa10ac56"><td id="SRA&gt;" class=""><strong>Item</strong></td><td id="NrJp" class=""><strong>Purpose</strong></td><td id="pned" class=""><strong>Our Note</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ca-baff-f63413480bb5"><td id="SRA&gt;" class=""><strong>Heavy Moisturizer / Cold Cream</strong></td><td id="NrJp" class="">Combat dry skin and chapping.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-802e-a2fa-d5e1e7ba6afd"><td id="SRA&gt;" class=""><strong>Lip Balm (with SPF)</strong></td><td id="NrJp" class="">High altitude sun and wind will chap lips quickly.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80eb-91c9-eea4a9db449b"><td id="SRA&gt;" class=""><strong>Sunscreen (SPF 30+)</strong></td><td id="NrJp" class="">UV rays are intense at altitude, even when it&#x27;s cold.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8067-a955-cb2dd82e1bc1"><td id="SRA&gt;" class=""><strong>Personal Medication</strong></td><td id="NrJp" class="">Any prescriptions, pain relievers (Paracetamol), cold/flu medicine.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8041-8c9a-fef6b9de0fdc"><td id="SRA&gt;" class=""><strong>Basic First Aid Kit</strong></td><td id="NrJp" class="">Band-aids, antiseptic cream, pain relief spray/gel.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-804f-beab-fac62c805b46"><td id="SRA&gt;" class=""><strong>Nasal Spray</strong></td><td id="NrJp" class="">The cold, dry air can cause a blocked or dry nose.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8036-82a8-cfbbfed71fbd"><td id="SRA&gt;" class=""><strong>Hand Sanitizer &amp; Tissues</strong></td><td id="NrJp" class="">Essential for on-the-go hygiene.</td><td id="pned" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80cc-a365-fe85602d3cf8"><td id="SRA&gt;" class=""><strong>ORS (Oral Rehydration Salts)</strong></td><td id="NrJp" class="">For hydration, which is key at altitude.</td><td id="pned" class=""></td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-80f5-bd07-c6c4eb89d022" class=""><strong>5. 🔌 Electronics &amp; Essentials</strong></p></div><div style="display:contents" dir="auto"><p id="2c442480-215e-80ed-bad0-ee71352f9b9c" class="">
+</p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8099-90f4-ccaaa0ec0de2" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8055-8113-f7956eff9c5a"><td id="[RBN" class=""><strong>Item</strong></td><td id=":uI:" class=""><strong>Purpose</strong></td><td id="@w~&lt;" class=""><strong>Our Note</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80e0-b5bd-d3bfa4f2e2a6"><td id="[RBN" class=""><strong>Power Bank</strong></td><td id=":uI:" class="">Cold temperatures drain phone batteries quickly. Must have!</td><td id="@w~&lt;" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8007-90e6-c2c0f728bc42"><td id="[RBN" class=""><strong>Camera &amp; Chargers</strong></td><td id=":uI:" class="">To capture the snow-capped views.</td><td id="@w~&lt;" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80a3-9662-e7b7c8cf2dea"><td id="[RBN" class=""><strong>Thermos Flask / Insulated Bottle</strong></td><td id=":uI:" class="">Crucial for carrying hot water/tea/coffee on day trips.</td><td id="@w~&lt;" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8095-af3f-de94b04c0053"><td id="[RBN" class=""><strong>Original ID Proofs</strong></td><td id=":uI:" class="">Aadhaar Card / Voter ID / Driver&#x27;s License. Required for hotel check-in and Inner Line Permit checks.</td><td id="@w~&lt;" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80bd-a6d9-c0df65a414e6"><td id="[RBN" class=""><strong>Cash</strong></td><td id=":uI:" class="">While Manali takes digital payments, cash is vital in remote areas like Sissu/Sethan.</td><td id="@w~&lt;" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ed-96ca-d7abfd957b05"><td id="[RBN" class=""><strong>Daypack</strong></td><td id=":uI:" class="">A small bag to carry water, snacks, phone, and gloves during day trips.</td><td id="@w~&lt;" class=""></td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h2 id="2c442480-215e-80d9-bfbd-d985c8cfb55b" class="">✅ Do&#x27;s and ❌ Don&#x27;ts in Manali</h2></div><div style="display:contents" dir="auto"><h3 id="2c442480-215e-8071-a2b3-d1ccac447569" class=""><strong>❄️ Safety &amp; Health (Winter Essentials)</strong></h3></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8016-a443-d1f799fe2313" class="">
+</p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-809e-9084-c7c4c76a5a73" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80b7-8dba-f1bc27b2d964"><td id="X]h`" class=""><strong>✅ DO</strong></td><td id="gDb_" class=""><strong>❌ DON&#x27;T</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-808d-a3c4-df0a58851e06"><td id="X]h`" class=""><strong>Wear Layers:</strong> Strictly follow the 3-layer system (<strong>Thermals</strong> + Fleece/Sweater + <strong>Waterproof Jacket</strong>) to regulate body temperature.</td><td id="gDb_" class=""><strong>Wear Cotton/Denim in Snow:</strong> These materials absorb moisture, stay wet, and will make you extremely cold, risking sickness.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8070-b32d-f9dd60d02907"><td id="X]h`" class=""><strong>Hydrate Constantly:</strong> Drink warm water, tea, or Thukpa frequently. High altitude and cold air cause rapid dehydration.</td><td id="gDb_" class=""><strong>Consume Alcohol Heavily:</strong> Alcohol can increase the risk of hypothermia and dehydration, and it impairs judgment on icy paths.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8009-aab8-f3844875d505"><td id="X]h`" class=""><strong>Carry Cash:</strong> While the main Mall Road has ATMs/digital pay, rural Sethan, Sissu, and small <em>dhabas</em> may require cash.</td><td id="gDb_" class=""><strong>Trust Only Hotel Blankets:</strong> Always check if your hotel provides a good room heater and an electric blanket. Cold nights are brutal!</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-801a-9593-d077c45fdcc5"><td id="X]h`" class=""><strong>Negotiate Taxi Fares:</strong> Bargain with local taxi drivers, especially for full-day bookings like Sissu and Sethan, as you are a group of six.</td><td id="gDb_" class=""><strong>Self-Drive Recklessly:</strong> Unless you are a seasoned mountain driver with a 4x4 and snow chains, hire a local, experienced driver.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-803d-91c8-c2c34709560e"><td id="X]h`" class=""><strong>Use Sun Protection:</strong> Wear UV-blocking sunglasses, sunscreen, and SPF lip balm. Sun reflection off the snow is intense.</td><td id="gDb_" class=""><strong>Go Out on Icy Paths Alone at Night:</strong> Icy spots are common, especially on side roads. Stick to well-lit areas, particularly in Old Manali.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-80f8-81b5-f61453e32380" class=""><strong>🏛️ Culture &amp; Environment</strong></p></div><div style="display:contents" dir="auto"><p id="2c442480-215e-80a8-ac66-ed775f3d14cd" class="">
+</p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-805a-a09b-d6b40f720b6a" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80fc-900c-ef86ac0a5f0e"><td id="Bbf{" class=""><strong>✅ DO</strong></td><td id="OPeb" class=""><strong>❌ DON&#x27;T</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-808e-9465-d0eb787537b0"><td id="Bbf{" class=""><strong>Respect Religious Sites:</strong> When visiting temples (like Hadimba or Vashisht), dress modestly (full coverage) and always remove your shoes. Cover your head when entering a Gurudwara or Dargah.</td><td id="OPeb" class=""><strong>Litter or Use Polythene:</strong> Himachal Pradesh is very strict about cleanliness. Carry all wrappers, plastic, and waste back to the nearest dustbin. <strong>Polythene is banned.</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8055-80ae-c588d23313df"><td id="Bbf{" class=""><strong>Try Local Food:</strong> Seek out local eateries for authentic Himachali dishes like <strong>Siddu</strong> and fresh <strong>Trout Fish</strong>.</td><td id="OPeb" class=""><strong>Disregard Local Advice:</strong> If a local, the hotel staff, or your cab driver advises against a route (e.g., due to ice or a permit issue), follow their guidance.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80d2-be29-dd64f90d13b0"><td id="Bbf{" class=""><strong>Support Local Businesses:</strong> Buy souvenirs, woolen clothes, and handicrafts from local markets (Tibetan Market, Mall Road).</td><td id="OPeb" class=""><strong>Deface Property:</strong> Do not scribble or carve on rocks, trees, or buildings.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8030-b115-c691a6b34d9a"><td id="Bbf{" class=""><strong>Be Prepared for Permits:</strong> Know that permits are required for vehicles to certain high-altitude zones (like Sethan in winter, or Rohtang Pass, which is closed).</td><td id="OPeb" class=""><strong>Take Photos Without Consent:</strong> Always ask permission before photographing local people, especially women or monks in monasteries.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8087-abb2-f85a0dc17e71" class=""><strong>🚘 Tourist Traps &amp; Convenience</strong></p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8077-afa4-faeec4034c66" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8024-be3b-dea295b927cf"><td id="pcD&lt;" class=""><strong>✅ DO</strong></td><td id="^BU=" class=""><strong>❌ DON&#x27;T</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8054-93d2-c4f620210d6d"><td id="pcD&lt;" class=""><strong>Check Hotel Amenities:</strong> Confirm your hotel has 24-hour running hot water and reliable power backup (generator), as power cuts are common in winter.</td><td id="^BU=" class=""><strong>Feel Obligated to Rent Snow Gear:</strong> If you have your own high-quality, waterproof jacket and boots, you usually don&#x27;t need to rent the local &#x27;snow dress&#x27; unless your gear is insufficient.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80db-a95f-fa11f35c6ba8"><td id="pcD&lt;" class=""><strong>Stick to Reputable Tour Operators:</strong> For adventure sports like skiing in Solang, ensure the operator is certified and uses proper safety equipment.</td><td id="^BU=" class=""><strong>Get Convinced by Strangers:</strong> Avoid touts or random people at the bus stand/Mall Road who try to steer you toward specific hotels, restaurants, or taxi services for commission.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80ab-a06f-e761d321e3f0"><td id="pcD&lt;" class=""><strong>Keep Offline Maps Ready:</strong> Mobile network (especially 4G) can be unreliable in Sethan and Sissu. Download Google Maps for the area beforehand.</td><td id="^BU=" class=""><strong>Overtake on Turns:</strong> Mountain roads require patience. Never try to overtake vehicles on blind corners. Safety first for all six of us!</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8054-8a62-c1fca2613ef2" class=""><strong>☕ Our Manali Café Hop List</strong></p></div><div style="display:contents" dir="auto"><p id="2c442480-215e-8006-b154-f8bf0a69c26d" class=""><strong>📍 Old Manali Highlights (Day 2 Evening)</strong></p></div><div style="display:contents" dir="ltr"><table id="2c442480-215e-8078-8b4d-f9ca01dd26af" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8080-a388-f7d25eefe1cf"><td id="caJ?" class=""><strong>Café Name</strong></td><td id="zdRu" class=""><strong>Vibe &amp; Location</strong></td><td id="Za}e" class=""><strong>Must-Try Items</strong></td><td id="PzMq" class=""><strong>Our Plan</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80a5-9abf-f560abceedad"><td id="caJ?" class=""><strong>1. Café 1947</strong></td><td id="zdRu" class=""><strong>Riverside Classic.</strong> Located right on the Manalsu River. Famous for its Italian food, bohemian vibe, and live music (check schedules).</td><td id="Za}e" class="">Wood-Fired Pizzas, Pasta, Hot Chocolate.</td><td id="PzMq" class=""><strong>Evening Meal Spot:</strong> Great for our celebratory dinner, offering a unique ambiance and space for our group.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-80fe-985a-d4b02894a2e2"><td id="caJ?" class=""><strong>2. The Lazy Dog Lounge</strong></td><td id="zdRu" class=""><strong>Spacious &amp; Cozy.</strong> Another iconic spot by the river with both indoor and outdoor seating. Good for chill vibes and diverse cuisine.</td><td id="Za}e" class="">Trout Fish, Tibetan Momos, Banana Pancakes.</td><td id="PzMq" class=""><strong>Sunset Hangout:</strong> We can aim for this spot after Solang to relax and enjoy the views before dinner.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-8029-8f86-e17404fc48d4"><td id="caJ?" class=""><strong>3. Dylan&#x27;s Toasted &amp; Roasted Coffee House</strong></td><td id="zdRu" class=""><strong>Best Coffee.</strong> A cozy, Bob Dylan-themed spot dedicated to the art of coffee. Famous for its aromatic brews.</td><td id="Za}e" class="">Freshly Brewed Coffee (Turkish/Espresso), Homemade Chocolate Chip Cookies.</td><td id="PzMq" class=""><strong>Quick Warm-up:</strong> Perfect for a quick, high-quality coffee break late afternoon on Day 2.</td></tr></div><div style="display:contents" dir="ltr"><tr id="2c442480-215e-800b-8df0-e9bd648fcb47"><td id="caJ?" class=""><strong>4. Drifters&#x27; Inn &amp; Café</strong></td><td id="zdRu" class=""><strong>Traveler Hub.</strong> Known for its warm wooden interiors, board games, and great comfort food. A reliable spot for a large group.</td><td id="Za}e" class="">Chicken Stroganoff, Egg Benedict, Pizza.</td><td id="PzMq" class=""><strong>Backup / Late Night:</strong> If the other two are full, or if we need a place with great comfort food near the main street.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="2c442480-215e-80ba-804b-e3b8ff81d86c" class=""><strong>Our Suggested Café Schedule Integration:</strong></h3></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-80ce-bbb6-cd8d498c9a16" class="bulleted-list"><li style="list-style-type:disc"><strong>Day 1 Evening:</strong> Dinner at a reliable spot like <strong>Johnson&#x27;s Café</strong> or a restaurant near Mall Road.</li></ul></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-8090-bcd4-c754dec257a7" class="bulleted-list"><li style="list-style-type:disc"><strong>Day 2 Evening (Café Hop):</strong> Start at <strong>The Lazy Dog</strong> for sunset/snacks, then head to <strong>Café 1947</strong> for dinner and live music (if available).</li></ul></div><div style="display:contents" dir="auto"><ul id="2c442480-215e-803f-9060-fb162ede7a68" class="bulleted-list"><li style="list-style-type:disc"><strong>Day 3 Afternoon:</strong> Quick stop at <strong>Dana Coffee House</strong> on Mall Road for our final coffee and dessert before departure</li></ul></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
